@@ -6,6 +6,8 @@
 		<title>Yash Shah</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.4.10/dialog-polyfill.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.4.10/dialog-polyfill.min.js"></script>
 		<link rel="stylesheet" href="assets/css/material.min.css">
 		<script src="assets/js/material.min.js"></script>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -67,7 +69,7 @@
 					</header>
 					<div class="row">
 						<div class="4u 12u$(mobile)">
-							<img class="rushield" src="images/ru_logo.png">
+							<img class="rushield mobileRUShield" src="images/ru_logo.png">
 						</div>
 						<div class="8u 12u$(mobile)">
 							<h1 class="univ"><a href="http://soe.rutgers.edu/">Rutgers University</a></h1>
@@ -91,10 +93,57 @@
 
 			<!-- Experience -->
 			<section id="experience" class="dark">
-				<header>
-					<h2>Experience</h2>
-					<hr/>
-				</header>
+				<div class="container">
+					<header>
+						<h2>Experience</h2>
+						<hr/>
+					</header>
+					
+					<div class="row">
+						<div class="6u 12u$(narrow) 12u$(narrower) 12u$(mobile)">
+							<h1 class="company"><a href="https://arria.com/"><img class="logo" src="images/arria.png"></a></h1>
+							<h2 class="center location">Arria NLG PLC</h2>
+							<h2 class="center position">Solutions Engineering Intern</h2>
+							<h2 class="center dates">June 2018 - Present</h2>
+							<button id="arria-link" type="button" class="mdl-button mdl-js-button mdl-button--raised more">
+									Learn More
+							</button>
+						</div>
+						<div class="6u 12u$(narrow) 12u$(narrower) 12u$(mobile)">
+							<h1 class="company"><a href="https://siemens.com/"><img class="logo" src="images/siemens.png"></a></h1>
+							<h2 class="center location">Siemens Corporate Technology</h2>
+							<h2 class="center position">Algorithms & Software Developer</h2>
+							<h2 class="center dates">August 2017 - May 2018</h2>
+							<button id="siemens-link" class="mdl-button mdl-js-button mdl-button--raised more">
+									Learn More
+							</button>
+						</div>
+					</div>
+					<br>
+					<br>
+					<div class="row">
+						<div class="6u 12u$(narrow) 12u$(narrower) 12u$(mobile)">
+							<h1 class="company"><a href="https://wewalkthru.com/"><img class="logo" src="images/walkthru.png"></a></h1>
+							<h2 class="center location">WalkThru, Inc.</h2>
+							<h2 class="center position">Software Engineering Intern</h2>
+							<h2 class="center dates">June 2017 - August 2017</h2>
+							<button id="walkthru-link" class="mdl-button mdl-js-button mdl-button--raised more">
+									Learn More
+							</button>
+						</div>
+						<div class="6u 12u$(narrow) 12u$(narrower) 12u$(mobile)">
+							<h1 class="company"><a href="https://eas.rutgers.edu/"><img class="logo-tall" src="images/ru_logo.png"></a></h1>
+							<h2 class="center location">Rutgers University</h2>
+							<h2 class="center location">Enterprise Applications Services</h2>
+							<h2 class="center position">Software Developer</h2>
+							<h2 class="center dates">June 2016 - May 2017</h2>
+							<button id="rueas-link" class="mdl-button mdl-js-button mdl-button--raised more">
+									Learn More
+							</button>
+						</div>
+					</div>
+				</div>
+
 			</section>
 
 			<!-- Portfolio -->
@@ -182,7 +231,7 @@
 		</div>
 
 		<!-- Modals for Portfolio Projects -->
-		<div id="openLaunchRModal" class="modalDialog">
+		<!-- <div id="openLaunchRModal" class="modalDialog">
 			<div>
 				<a href="#close" title="Close" class="close">X</a>
 				<h2>LaunchR Website</h2>
@@ -226,7 +275,72 @@
 				<p align="center" class="no-margin-bottom"><b>Description:</b> </p>
 				<p align="center" class="one-margin-bottom">Worked with <a href="http://vandankolli.me">Vandan Kolli</a>, Smruthi Srikumar, and Tanya Deepesh to present A La Carte, a service which solves the inefficiencies of the food distribution cycle in megacities. We focused on the city of Mumbai and an example as to how a system such as A La Carte could solve the problems and create a large impact on individual purveyors located in such megacities. We received recognition as a Top Five pitch at the competition held at Rutgers University.</p>
 			</div>
-		</div>
+		</div> -->
+
+		<!-- Dialog Definitions for Work Experience -->
+
+		<!-- Arria NLG -->
+		<dialog id="arriaDialog" class="mdl-dialog">
+			<h4 class="mdl-dialog__title">Arria NLG PLC <span class="hideOnMobile" style="float:right"><img src="images/arria.png"></span></h4>
+			<div class="mdl-dialog__content">
+				<h2 class="left position">Solutions Engineering Intern</h2>
+				<h2 class="left dates">June 2018 - Present</h2>
+				<ul class="left accomplishments">
+					<li>Developing an extension which produces contextually useful synonyms for the natural language generation engine.</li>
+					<li>Designing proof-of-concept narratives using Arria’s Articulate Text Language (ATL) for training purposes.</li>
+				</ul>
+				
+				<!-- Skills/Tools -->
+				<span class="mdl-chip">
+					<span class="mdl-chip__text">JavaScript</span>
+				</span>
+				<span class="mdl-chip">
+					<span class="mdl-chip__text">ATL</span>
+				</span>
+				<span class="mdl-chip">
+					<span class="mdl-chip__text">NLG Studio</span>
+				</span>
+				<span class="mdl-chip">
+					<span class="mdl-chip__text">PowerBI</span>
+				</span>
+			</div>
+			<div class="mdl-dialog__actions">
+				<button type="button" class="mdl-button close">Close</button>
+			</div>
+		</dialog>
+
+		<!-- Siemens CT -->
+		<dialog id="siemensDialog" class="mdl-dialog">
+			<h4 class="mdl-dialog__title">Siemens Corporate Technology <span class="hideOnMobile" style="float:right; width: 30%"><img src="images/siemens.png"></span></h4>
+			<div class="mdl-dialog__content">
+				<h2 class="left position">Algorithms & Software Developer</h2>
+				<h2 class="left dates">August 2017 - May 2018</h2>
+				<ul class="left accomplishments">
+					<li>Built a web application to enable graphical SCL source code manipulation using abstract syntax trees.</li>
+					<li>Engineered backend systems to model energy infrastructures using Python and MATLAB.</li>
+					<li>Designed and implemented a communication interface to connect components of a project developed using various technologies (Node.JS, Python, C#, C++).</li>
+					<li>Developed real time applications for the PLC 1500 platform using Siemen's S7 Protocol and TIA Portal.</li>
+					<li>Implemented Docker services to automate build processes and to bundle components into a singular package.</li>
+				</ul>
+				
+				<!-- Skills/Tools -->
+				<span class="mdl-chip">
+					<span class="mdl-chip__text">C</span>
+				</span>
+				<span class="mdl-chip">
+					<span class="mdl-chip__text">C++</span>
+				</span>
+				<span class="mdl-chip">
+					<span class="mdl-chip__text">Embedded</span>
+				</span>
+				<span class="mdl-chip">
+					<span class="mdl-chip__text">JavaScript</span>
+				</span>
+			</div>
+			<div class="mdl-dialog__actions">
+				<button type="button" class="mdl-button close">Close</button>
+			</div>
+		</dialog>
 
 		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
@@ -236,15 +350,27 @@
 		<script src="assets/js/util.js"></script>
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 		<script src="assets/js/main.js"></script>
-		<script type="text/javascript"
-				src="http://viralpatel.net/blogs/demo/jquery/jquery.shorten.1.0.js"></script>
 
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$(".description").shorten({
-					"showChars" : 100
-				}); 
-			});
-		</script>	
+		<script>
+			function initDialog(dialogId, buttonId) {
+				var dialog = document.querySelector(dialogId);
+				if(! dialog.showModal) {
+					dialogPolyfill.registerDialog(dialog);
+				}
+				
+				var button = document.querySelector(buttonId);
+				button.addEventListener('click', function() {
+					dialog.showModal();
+				});
+
+				dialog.querySelector('.close').addEventListener('click', function() {
+					dialog.close();
+				});
+			}
+
+			initDialog('#arriaDialog', '#arria-link');
+			initDialog('#siemensDialog', '#siemens-link');
+			
+		</script>
 	</body>
 </html>

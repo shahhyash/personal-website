@@ -1128,6 +1128,42 @@ h2.courses {
   text-align: left;
   font-size: 1em; }
 
+img.logo {
+  vertical-align: middle;
+  width: 30%; }
+
+img.logo-tall {
+  vertical-align: middle;
+  width: 15%; }
+
+h1.company {
+  text-align: center;
+  font-size: 1.75em; }
+
+h2.center {
+  text-align: center; }
+
+h2.left {
+  text-align: left; }
+
+h2.location {
+  font-size: 1.25em; }
+
+h2.position {
+  font-size: 1.25em;
+  font-weight: bold; }
+
+h2.dates {
+  font-size: 1em; }
+
+button.more {
+  margin-top: 20px; }
+
+ul.accomplishments {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 1em; }
+
 /* Sections/Article */
 section, article {
   margin-bottom: 3em; }
@@ -1500,13 +1536,9 @@ button,
     #main > section.dark {
       color: #ddd;
       color: rgba(255, 255, 255, 0.75); }
-      #main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
-        color: inherit; }
       #main > section.dark strong {
-        color: #fff;
         border-color: inherit; }
       #main > section.dark a {
-        color: #fff;
         border-color: inherit; }
         #main > section.dark a:hover {
           border-bottom-color: rgba(255, 255, 255, 0); }
@@ -1793,21 +1825,19 @@ button,
 .one-margin-bottom {
   margin-bottom: 1em; }
 
-.close {
-  background: #FFFFFF;
-  color: #606061;
-  line-height: 40px;
-  position: absolute;
-  right: 14px;
-  text-align: center;
-  top: 12px;
-  width: 40px;
-  text-decoration: none;
-  font-weight: bold; }
-
-.close:hover {
-  background: #00d9ff; }
-
 .margintop {
   margin-top: 1em;
   margin-left: 1em; }
+
+dialog {
+  position: fixed;
+  top: 50%;
+  min-width: 50vw !important;
+  max-height: 80vh !important;
+  transform: translate(0, -50%); }
+
+@media screen and (max-width: 960px) {
+  .hideOnMobile {
+    display: none !important; }
+  .mobileRUShield {
+    width: 25%; } }
