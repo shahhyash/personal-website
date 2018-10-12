@@ -199,6 +199,34 @@
 		clear: both;
 	}
 
+	.rushield {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
+
+	h1.univ {
+		text-align: left;
+		font-size: 1.75em;
+	}
+
+	h2.degree {
+		text-align: left;
+		font-size: 1.25em;
+		font-weight: bold;
+	}
+
+	h2.minors {
+		text-align: left;
+		font-size: 1.25em;
+	}
+
+	h2.courses {
+		text-align: left;
+		font-size: 1em;
+	}
+
 /* Sections/Article */
 
 	section, article {
@@ -726,11 +754,11 @@
                 background-image: url('../../images/banner2.jpg');
 			}
 
-			&.two {
+			&.light {
 				background-color: #f5fafa;
 			}
 
-			&.three {
+			&.dark {
 				background-color: #ecf1f1;
 			}
 
