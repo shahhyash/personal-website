@@ -127,7 +127,7 @@
 							<h2 class="center location">WalkThru, Inc.</h2>
 							<h2 class="center position">Software Engineering Intern</h2>
 							<h2 class="center dates">June 2017 - August 2017</h2>
-							<button id="walkthru-link" class="mdl-button mdl-js-button mdl-button--raised more">
+							<button id="wt-link" class="mdl-button mdl-js-button mdl-button--raised more">
 									Learn More
 							</button>
 						</div>
@@ -281,9 +281,9 @@
 
 		<!-- Arria NLG -->
 		<dialog id="arriaDialog" class="mdl-dialog">
-			<h4 class="mdl-dialog__title">Arria NLG PLC <span class="hideOnMobile" style="float:right"><img src="images/arria.png"></span></h4>
+			<h4 class="mdl-dialog__title"><span class="hideOnMobile">Arria NLG PLC</span> <img src="images/arria.png"></h4>
+			<h2 class="mdl-dialog__position">Solutions Engineering Intern</h2>
 			<div class="mdl-dialog__content">
-				<h2 class="left position">Solutions Engineering Intern</h2>
 				<h2 class="left dates">June 2018 - Present</h2>
 				<ul class="left accomplishments">
 					<li>Developing an extension which produces contextually useful synonyms for the natural language generation engine.</li>
@@ -311,9 +311,9 @@
 
 		<!-- Siemens CT -->
 		<dialog id="siemensDialog" class="mdl-dialog">
-			<h4 class="mdl-dialog__title">Siemens Corporate Technology <span class="hideOnMobile" style="float:right; width: 30%"><img src="images/siemens.png"></span></h4>
+			<h4 class="mdl-dialog__title"><span class="hideOnMobile">Siemens Corporate Technology</span> <img src="images/siemens.png"></h4>
+			<h2 class="mdl-dialog__position">Algorithms & Software Developer</h2>
 			<div class="mdl-dialog__content">
-				<h2 class="left position">Algorithms & Software Developer</h2>
 				<h2 class="left dates">August 2017 - May 2018</h2>
 				<ul class="left accomplishments">
 					<li>Built a web application to enable graphical SCL source code manipulation using abstract syntax trees.</li>
@@ -340,6 +340,78 @@
 			<div class="mdl-dialog__actions">
 				<button type="button" class="mdl-button close">Close</button>
 			</div>
+		</dialog>
+
+		<!-- WalkThru, Inc -->
+		<dialog id="wtDialog" class="mdl-dialog">
+			<h4 class="mdl-dialog__title"><span class="hideOnMobile">WalkThru, Inc.</span> <img src="images/walkthru.png"></h4>
+			<h2 class="mdl-dialog__position">Software Engineering Intern</h2>
+			<div class="mdl-dialog__content">
+				<h2 class="left dates">June 2017 - August 2017</h2>
+				<ul class="left accomplishments">
+						<li>Developed and maintained integration of Salesforce, SAP, Oracle, and other industry leading SaaS applications.</li>
+						<li>Implemented a classifier using historical client data to automatically refactor a WalkThru onto an updated website.</li>
+				</ul>
+
+				<!-- Skills/Tools -->
+				<span class="mdl-chip">
+					<span class="mdl-chip__text">JavaScript</span>
+				</span>
+				<span class="mdl-chip">
+					<span class="mdl-chip__text">Node.JS</span>
+				</span>
+				<span class="mdl-chip">
+					<span class="mdl-chip__text">React</span>
+				</span>
+				<span class="mdl-chip">
+					<span class="mdl-chip__text">Python</span>
+				</span>
+				<span class="mdl-chip">
+					<span class="mdl-chip__text">SciKit-Learn</span>
+				</span>
+				<span class="mdl-chip">
+					<span class="mdl-chip__text">SQL</span>
+				</span>
+			</div>
+			<div class="mdl-dialog__actions">
+				<button type="button" class="mdl-button close">Close</button>
+			</div>
+		</dialog>
+
+		<!-- WalkThru, Inc -->
+		<dialog id="rueasDialog" class="mdl-dialog">
+				<h4 class="mdl-dialog__title"><span class="hideOnMobile">Rutgers University, Enterprise Application Services</span> <img src="images/ru_logo.png"></h4>
+				<h2 class="mdl-dialog__position">Software Developer</h2>
+				<div class="mdl-dialog__content">
+					<h2 class="left dates">June 2016 - May 2017</h2>
+					<ul class="left accomplishments">
+							<li>Developed and maintained the instructional application Sakai within Rutgers. </li>
+							<li>Contributed bug fixes and feature implementations to the open-source Sakai community.</li>
+							<li>Created tools for administrative \& technical use within the office using Java and the Spring Framework</li>
+					</ul>
+
+					<span class="mdl-chip">
+						<span class="mdl-chip__text">Java</span>
+					</span>
+					<span class="mdl-chip">
+						<span class="mdl-chip__text">Spring Framework</span>
+					</span>
+					<span class="mdl-chip">
+						<span class="mdl-chip__text">Python</span>
+					</span>
+					<span class="mdl-chip">
+						<span class="mdl-chip__text">HTML</span>
+					</span>
+					<span class="mdl-chip">
+						<span class="mdl-chip__text">CSS/SCSS</span>
+					</span>
+					<span class="mdl-chip">
+						<span class="mdl-chip__text">JavaScript</span>
+					</span>
+				</div>
+				<div class="mdl-dialog__actions">
+					<button type="button" class="mdl-button close">Close</button>
+				</div>
 		</dialog>
 
 		<!-- Scripts -->
@@ -370,7 +442,8 @@
 
 			initDialog('#arriaDialog', '#arria-link');
 			initDialog('#siemensDialog', '#siemens-link');
-			
+			initDialog('#wtDialog', '#wt-link');
+			initDialog('#rueasDialog', '#rueas-link');
 		</script>
 	</body>
 </html>

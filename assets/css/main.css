@@ -1105,12 +1105,6 @@ p, ul, ol, dl, table {
 br.clear {
   clear: both; }
 
-.rushield {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%; }
-
 h1.univ {
   text-align: left;
   font-size: 1.75em; }
@@ -1832,12 +1826,45 @@ button,
 dialog {
   position: fixed;
   top: 50%;
-  min-width: 50vw !important;
+  min-width: 75vw !important;
   max-height: 80vh !important;
   transform: translate(0, -50%); }
+
+.mdl-dialog__content {
+  max-height: 50vh;
+  width: 100%;
+  overflow: scroll; }
+
+.mdl-dialog__position {
+  padding: 0 24px 10px;
+  margin: 0;
+  font-weight: bold; }
 
 @media screen and (max-width: 960px) {
   .hideOnMobile {
     display: none !important; }
-  .mobileRUShield {
-    width: 25%; } }
+  .rushield {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%; }
+  .mdl-dialog__title > img {
+    max-width: 90% !important;
+    max-height: 20% !important; }
+  .mdl-dialog__content {
+    padding-top: 0 !important; }
+  .mdl-dialog__position {
+    font-size: 1em; } }
+
+@media screen and (min-width: 961px) {
+  .rushield {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; }
+  .mdl-dialog__title > img {
+    float: right;
+    max-width: 30% !important;
+    max-height: 10% !important; }
+  .mdl-dialog__position {
+    font-size: 1.25em; } }
