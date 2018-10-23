@@ -1105,59 +1105,6 @@ p, ul, ol, dl, table {
 br.clear {
   clear: both; }
 
-h1.univ {
-  text-align: left;
-  font-size: 1.75em; }
-
-h2.degree {
-  text-align: left;
-  font-size: 1.25em;
-  font-weight: bold; }
-
-h2.minors {
-  text-align: left;
-  font-size: 1.25em; }
-
-h2.courses {
-  text-align: left;
-  font-size: 1em; }
-
-img.logo {
-  vertical-align: middle;
-  width: 30%; }
-
-img.logo-tall {
-  vertical-align: middle;
-  width: 15%; }
-
-h1.company {
-  text-align: center;
-  font-size: 1.75em; }
-
-h2.center {
-  text-align: center; }
-
-h2.left {
-  text-align: left; }
-
-h2.location {
-  font-size: 1.25em; }
-
-h2.position {
-  font-size: 1.25em;
-  font-weight: bold; }
-
-h2.dates {
-  font-size: 1em; }
-
-button.more {
-  margin-top: 20px; }
-
-ul.accomplishments {
-  list-style-type: disc;
-  list-style-position: outside;
-  padding-left: 1em; }
-
 /* Sections/Article */
 section, article {
   margin-bottom: 3em; }
@@ -1779,49 +1726,84 @@ button,
     #footer .copyright li:first-child {
       margin-top: 0; } }
 
-/* Modal Dialog */
-.modalDialog {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 99999;
-  opacity: 0;
-  overflow: scroll;
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
-  pointer-events: none; }
-  .modalDialog img {
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%; }
-  .modalDialog h2 {
-    text-align: center; }
+@media screen and (max-width: 960px) {
+  .hideOnMobile {
+    display: none !important; }
+  .rushield {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%; }
+  .mdl-dialog__title > img {
+    max-width: 90% !important;
+    max-height: 20% !important; }
+  .mdl-dialog__content {
+    padding-top: 0 !important; }
+  .mdl-dialog__position {
+    font-size: 1em; } }
 
-.modalDialog:target {
-  opacity: 1;
-  pointer-events: auto; }
+@media screen and (min-width: 961px) {
+  .rushield {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; }
+  .mdl-dialog__title > img {
+    float: right;
+    max-width: 30% !important;
+    max-height: 10% !important; }
+  .mdl-dialog__position {
+    font-size: 1.25em; } }
 
-.modalDialog > div {
-  width: 90%;
-  position: relative;
-  margin: 5% auto;
-  padding: 5px 20px 13px 20px;
-  border-radius: 10px;
-  background: #fff; }
+h1.univ {
+  text-align: left;
+  font-size: 1.75em; }
 
-.no-margin-bottom {
-  margin-bottom: 0em; }
+h2.degree {
+  text-align: left;
+  font-size: 1.25em;
+  font-weight: bold; }
 
-.one-margin-bottom {
-  margin-bottom: 1em; }
+h2.minors {
+  text-align: left;
+  font-size: 1.25em; }
 
-.margintop {
-  margin-top: 1em;
-  margin-left: 1em; }
+h2.courses {
+  text-align: left;
+  font-size: 1em; }
+
+img.logo {
+  vertical-align: middle;
+  width: 30%; }
+
+img.logo-tall {
+  vertical-align: middle;
+  width: 15%; }
+
+.work-card.mdl-card__title > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.mdl-card__supporting-text {
+  width: 100%; }
+
+.work-card > .mdl-cell {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.work-card {
+  width: 100%; }
+
+.mdl-card__title {
+  padding-bottom: 0 !important; }
+
+.mdl-card__title-text {
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
 
 dialog {
   position: fixed;
@@ -1840,56 +1822,70 @@ dialog {
   margin: 0;
   font-weight: bold; }
 
-@media screen and (max-width: 960px) {
-  .hideOnMobile {
-    display: none !important; }
-  .rushield {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%; }
-  .mdl-dialog__title > img {
-    max-width: 90% !important;
-    max-height: 20% !important; }
-  .mdl-dialog__content {
-    padding-top: 0 !important; }
-  .mdl-dialog__position {
-    font-size: 1em; } }
+h1.company {
+  text-align: center;
+  font-size: 1.75em; }
 
-.work-card.mdl-card__title > img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
+h2.center {
+  text-align: center; }
 
-.mdl-card__supporting-text {
-  width: 100%; }
+h2.left {
+  text-align: left; }
 
-.mdl-cell {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
+h2.location {
+  font-size: 1.25em; }
 
-.work-card {
-  width: 100%; }
+h2.position {
+  font-size: 1.25em;
+  font-weight: bold; }
 
-.mdl-card__title {
-  padding-bottom: 0 !important; }
+h2.dates {
+  font-size: 1em; }
 
-.mdl-card__title-text {
-  height: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block; }
+ul.accomplishments {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 1em; }
 
-@media screen and (min-width: 961px) {
-  .rushield {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%; }
-  .mdl-dialog__title > img {
-    float: right;
-    max-width: 30% !important;
-    max-height: 10% !important; }
-  .mdl-dialog__position {
-    font-size: 1.25em; } }
+.launchr-website-card, .coagmento-card, .btnboard-card, .launchr-dashboard-card, .dsi-dashboard-card, .alacarte-card {
+  height: 250px;
+  max-width: 100%; }
+
+.launchr-website-card > .mdl-card__title {
+  color: #fff;
+  background-image: url("../../images/portfolio/launchr.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.coagmento-card > .mdl-card__title {
+  color: #fff;
+  background-image: url("../../images/portfolio/coagmento-android.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 5%; }
+
+.btnboard-card > .mdl-card__title {
+  color: #fff;
+  background-image: url("../../images/portfolio/btnboard.JPG");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.launchr-dashboard-card > .mdl-card__title {
+  color: #fff;
+  background-image: url("../../images/portfolio/launchr-dashboard.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.dsi-dashboard-card > .mdl-card__title {
+  color: #fff;
+  background-image: url("../../images/portfolio/dsi.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.alacarte-card > .mdl-card__title {
+  color: #fff;
+  background-image: url("../../images/portfolio/a-la-carte.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
