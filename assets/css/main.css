@@ -1856,6 +1856,31 @@ dialog {
   .mdl-dialog__position {
     font-size: 1em; } }
 
+.work-card.mdl-card__title > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.mdl-card__supporting-text {
+  width: 100%; }
+
+.mdl-cell {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.work-card {
+  width: 100%; }
+
+.mdl-card__title {
+  padding-bottom: 0 !important; }
+
+.mdl-card__title-text {
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
+
 @media screen and (min-width: 961px) {
   .rushield {
     display: block;
