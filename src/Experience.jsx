@@ -1,9 +1,15 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Card from 'react-bootstrap/Card'
-import Modal from 'react-bootstrap/Modal'
-import Badge from 'react-bootstrap/Badge'
+import {
+    Jumbotron,
+    Container,
+    Accordion,
+    Button,
+    Row,
+    Col,
+    Card,
+    Modal,
+    Badge,
+} from 'react-bootstrap';
 
 const EXPERIENCE_DATA = [
     {
@@ -67,7 +73,7 @@ const EXPERIENCE_DATA = [
         description: [
             'Developed and maintained the instructional application Sakai within Rutgers.',
             'Contributed bug fixes and feature implementations to the open-source Sakai community.',
-            'Created tools for administrative \& technical use within the office using Java and the Spring Framework'
+            'Created tools for administrative & technical use within the office using Java and the Spring Framework'
         ],
         tools: ['Java', 'Python', 'Javascript', 'Spring Framework']
     },
@@ -159,18 +165,43 @@ class ExperienceCard extends React.Component {
 export class ExperienceComponent extends React.Component {
     render() {
         return (
-            <Container>
-                <hr/>
-                <Row noGutters>
-                    <h1>Work Experience</h1>
-                </Row>
-                <hr/>
-                <Row style={{justifyContent: "space-around"}}>
-                    {EXPERIENCE_DATA.map(experience => (
-                        <ExperienceCard key={experience.company} {...experience} />
-                    ))}
-                </Row>
-            </Container>
+            <Jumbotron style={styles.jumbotron}>
+                <Container>
+                    <h1>Experience</h1>
+                    <hr />
+                    <br />
+                    <Row>
+                        <Col md={3} style={styles.imageCol}>
+                            <img src="/images/khan.png" alt="khan-logo" style={styles.imageLogo} />
+                        </Col>
+                        <Col md={9}>
+                            <h3><strong>Khan Academy</strong> | Software Engineer</h3>
+                            <h5 className="text-muted">June 2020 to Present</h5>
+                            <p>Working on features for the classroom team.</p>
+                        </Col>
+                    </Row>
+                    <br />
+                    <br />
+                    <Row style={{justifyContent: "space-around"}}>
+                        {EXPERIENCE_DATA.map(experience => (
+                            <ExperienceCard key={experience.company} {...experience} />
+                        ))}
+                    </Row>
+                </Container>
+            </Jumbotron>
         );
     }
 }
+
+const styles = {
+    jumbotron: {
+        background: "none",
+    },
+    imageCol: {
+        display: "flex",
+        justifyContent: "center",
+    },
+    imageLogo: {
+        width: "85%",
+    }
+};

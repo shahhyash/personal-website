@@ -1,9 +1,11 @@
 import React from 'react';
-import Jumbotron from 'react-bootstrap/Jumbotron'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Button from 'react-bootstrap/Button'
-import Image from 'react-bootstrap/Image'
+import {
+    Jumbotron,
+    Container,
+    Row,
+    Button,
+    Image,
+} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faFileAlt } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -12,20 +14,20 @@ import Particles from 'react-particles-js';
 export class IntroComponent extends React.Component {
     render() {
         return (
-            <Jumbotron fluid style={{
+            <Jumbotron style={{
                 backgroundColor: "#424242",
                 color: "white",
             }}>
                 <Container>
-                    <Image src="images/avatar.jpg" roundedCircle style={{
+                    <Image src="images/avatar.png" roundedCircle style={{
                         width: "100px",
                         height: "100px",
                         marginBottom: "2em"
                     }}/>
                     <h2 className="alt"><strong>Yash Shah</strong></h2>
-                    <p>Hi, I'm a student majoring in Computer Engineering & Computer Science at Rutgers University. I'm incredibly passionate about technology and entrepreneurship and I'm constantly working towards gaining experience in both fields.</p>
+                    <p>Hi, I'm a software engineer at Khan Academy. </p>
                     <Row noGutters>
-                        <Button variant="outline-light" className="mt-2 mr-2" href="mailto:yash.shah830@rutgers.edu" style={{zIndex: 99}}>
+                        <Button variant="outline-light" className="mt-2 mr-2" href="mailto:yash.shah830@gmail.com" style={{zIndex: 99}}>
                             <FontAwesomeIcon className="mr-2" icon={faEnvelope} />
                             Email
                         </Button>
