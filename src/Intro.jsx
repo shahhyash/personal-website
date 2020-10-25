@@ -23,7 +23,7 @@ export class IntroComponent extends React.Component {
                         marginBottom: "2em"
                     }}/>
                     <h2 className="alt"><strong>Yash Shah</strong></h2>
-                    <p>Hi, I'm a student majoring in Computer Engineering & Computer Science at Rutgers University. I'm incredibly passionate about technology and entrepreneurship and I'm constantly working towards gaining experience in both fields.</p>
+                    <p>Hi, I'm a Software Engineer on the Classrooms Product Team at Khan Academy.</p>
                     <Row noGutters>
                         <Button variant="outline-light" className="mt-2 mr-2" href="mailto:yash.shah830@rutgers.edu" style={{zIndex: 99}}>
                             <FontAwesomeIcon className="mr-2" icon={faEnvelope} />

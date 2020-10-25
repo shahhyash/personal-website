@@ -160,9 +160,9 @@ export class ExperienceComponent extends React.Component {
     render() {
         return (
             <Container>
-                <hr/>
+                <br/>
                 <Row noGutters>
-                    <h1>Work Experience</h1>
+                    <h1>Past Work Experience</h1>
                 </Row>
                 <hr/>
                 <Row style={{justifyContent: "space-around"}}>
@@ -170,6 +170,7 @@ export class ExperienceComponent extends React.Component {
                         <ExperienceCard key={experience.company} {...experience} />
                     ))}
                 </Row>
+                <br />
             </Container>
         );
     }

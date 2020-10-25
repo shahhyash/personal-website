@@ -14,12 +14,13 @@ class IndexComponent extends React.Component {
                 <IntroComponent/>
                 <EducationComponent/>
                 <ExperienceComponent/>
-                <ProjectsComponent/>
+                {/* <ProjectsComponent/> */}
+                <br />
                 <Container fluid style={{
                     display: "flex", flexWrap: "wrap", justifyContent: "center", backgroundColor: "#424242", color: "white", paddingTop: "25px", paddingBottom: "25px", textAlign: "center"
                 }}>
-                    <span>Copyright &copy; 2019 Yash Shah. &nbsp;</span>
-                    <span>Created Using ReactJS + Bootstrap.</span>
+                    <span>Copyright &copy; 2020 Yash Shah. &nbsp;</span>
+                    <span>Built with React + Bootstrap.</span>
                 </Container>
             </React.Fragment>
         );

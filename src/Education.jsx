@@ -7,7 +7,7 @@ export class EducationComponent extends React.Component {
     render() {
         return (
             <Container>
-                <hr/>
+                <br/>
                 <Row noGutters>
                     <h1>Education</h1>
                 </Row>
@@ -45,6 +45,7 @@ export class EducationComponent extends React.Component {
                         <a href="https://www.math.rutgers.edu/academics/undergraduate/courses/947-01-640-244-differential-equations-for-engineering-and-physics">Differential Equations</a>
                     </Row>
                 </Col>
+                <br />
             </Container>
         );
     }
